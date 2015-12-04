@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Welcome page</title>
+	<link rel="stylesheet" href="form1_style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="form_switch.js"></script>
+</head>
+<body>
+<!--<div id="wrapper">-->
+	<div class="land-panel">
+	<div class="login">
+		<form action="get" id="signup">
+			<h3>Login</h3>
+			<input type="email" placeholder="E-mail" />
+			<input type="password" placeholder="Password"/>
+			<a id="submit" href="#">SUBMIT</a>
+			<a class="change" href="#">Change form</a>
+		</form>
+		<!--<a id="submit" href="#">SUBMIT</a>-->
+
+		<form action="get" id="register" class="hidden_form">
+			<h3>Register</h3>
+			<input type="text" placeholder="Name"/>
+			<input type="email" placeholder="E-mail" />
+			<input type="password" placeholder="Password"/>
+			<a id="register-btn" href="#">Register</a>
+			<a class="change-back" href="#">Change form to Login</a>
+		</form>
+
+	</div>
+	</div>
+	<div class="next-panel">
+		<h1>this is the second page</h1>
+	</div>
+<!--</div>-->
+
+</body>
+</html>

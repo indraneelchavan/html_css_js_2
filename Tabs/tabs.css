@@ -1,0 +1,81 @@
+#tabs
+   {
+   background:gray;
+   height:50px;
+  }
+
+#t2,#t3,#t1
+   {
+   margin-left:10px;
+   margin-top:8px;
+   padding-top:10px;
+   height:30px;
+   width:100px;
+  
+   font-weight: bold;
+   text-align:center;
+   border-radius:10px 10px 0px 0px;
+   float:left;
+   }
+
+ .mouse-off
+   {
+   
+   background:silver;
+   color: red;
+   }
+
+ .mouse-on
+   {
+   
+   background:white;
+   color: blue;
+   border-top:2px solid red;
+	border-left:2px solid red;
+	border-right:2px solid red;
+   }
+
+.content
+{
+height:400px;
+width: 95.2%;
+position:absolute;
+border-bottom:5px solid gray;
+border-left:5px solid gray;
+border-right:5px solid gray;
+padding:20px;
+}
+
+.hidden{
+	display: none;
+}
+
+video{
+	float:left;
+}
+
+fieldset{
+	float: left;
+	margin-left: 60px;
+   border:12px solid gray;
+   width:400px;
+   background-color: yellow;
+   border-radius: 10px;
+}
+
+fieldset legend{
+   color: red;
+   font-size: 20px;
+}
+
+ul li{
+   margin-top: 20px;
+}
+
+h2{
+   color: red;
+}
+
+audio{
+   float: left;
+}

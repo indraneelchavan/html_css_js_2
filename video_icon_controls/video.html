@@ -1,0 +1,56 @@
+
+<html>
+<head>
+
+	<title>Video Controls</title>
+	<script>
+		function changeplay() {
+    		var image = document.getElementById('PlayImage');
+    		if (image.src.match("start")) {
+    			document.getElementById("video1").play();
+        		image.src = "./images/pause.png";
+    		}	 
+    		else{
+    			document.getElementById("video1").pause();
+        		image.src = "./images/start.png";
+    		}
+		}
+
+		function changemute() {
+    		var image = document.getElementById('MuteImage');
+    		if (image.src.match("mute")) {
+    			document.getElementById("video1").muted = true;
+        		image.src = "./images/unmoot.png";
+    		}	 
+    		else {
+    			document.getElementById("video1").muted = false;
+        		image.src = "./images/mute.png";
+    		}
+		}
+	</script>
+	<style>
+
+		body{
+			background-color: #21b7ad;
+		}
+		#PlayImage{
+			margin-right:50px;
+		}
+
+		div{
+			margin: 50px;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<div align="center">
+		<img id="PlayImage" onclick="changeplay()" src="./images/start.png" width="64" height="64">
+		<img id="MuteImage" onclick="changemute()" src="./images/mute.png" width="64" height="64">
+	</div>
+
+	<center><video id="video1" src="./videos/video1.mp4"></video></center>
+</body>
+</html>

@@ -1,1 +1,1 @@
-# html_css_js_2
+These files contain my html,css,javascript tests and experiments. A few jquery plugins are used as well.

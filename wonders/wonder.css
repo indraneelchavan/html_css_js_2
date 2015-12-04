@@ -1,0 +1,39 @@
+body{
+	background-color: #0ca08f;
+}
+
+table{
+	width:600px;
+	margin: auto;
+}
+
+th,td{
+	border:1px solid red;
+	background-color: #c8ff54;
+	color: red;
+}
+
+th{
+	height:80px;
+}
+
+#img-holder{
+	width:400px;
+	height:400px;
+}
+
+.wonders{
+	font-weight: bold;
+	width:200px;
+	text-align: center;
+}
+
+#info{
+	height:150px;
+}
+
+img{
+	width:400px;
+	height:400px;
+}
+

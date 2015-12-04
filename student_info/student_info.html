@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Multiplication Table</title>
+	
+	<link rel="stylesheet" href="student_info.css"/>
+	
+</head>
+
+<body>
+		<h1>Student Exam Info</h1>
+		<table>
+			<tr>
+				<td style ="width:200px;">Student Name</td>
+				<td id="name" style ="width:350px;"></td>
+			</tr>
+
+			<tr>
+				<td>Subject 1 Marks</td>
+				<td id="marks1"></td>
+			</tr>
+
+			<tr>
+				<td>Subject 2 Marks</td>
+				<td id="marks2"></td>
+			</tr>
+
+			<tr>
+				<td>Subject 3 Marks</td>
+				<td id="marks3"></td>
+			</tr>
+
+			<tr>
+				<td>Total Marks</td>
+				<td id = "total_marks" onclick = total1() ></td>
+			</tr>
+
+			<tr>
+				<td>Percentage Score</td>
+				<td id = "perc" onclick = percentage() ></td>
+			</tr>
+
+			<tr>
+				<td>Grade</td>
+				<td id = "grade" onclick = grade()></td>
+			</tr>
+		
+			
+	
+</body>
+<script type="text/javascript">
+		var name = prompt("Enter the student's name");
+		var marks1 = prompt("Enter the marks for Subject 1");
+		var marks2 = prompt("Enter the marks for Subject 2");
+		var marks3 = prompt("Enter the marks for Subject 3");
+
+</script>
+<script type="text/javascript" src="student_info.js"></script>
+
+</html>

@@ -1,0 +1,26 @@
+body{
+	background-color: #f9be3e;
+}
+div{
+
+	width:150px;
+	height:40px;
+	background-color: #d332d3;
+	border: 1px solid black;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+	margin-left:80px;
+	margin-top:20%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	
+}
+
+a{
+	text-decoration: none;
+	color:green;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: monotype corsiva;
+}

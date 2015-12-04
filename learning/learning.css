@@ -1,0 +1,67 @@
+body{
+	background-color: #04f7f3;
+}
+
+h1{
+	font-family: monotype corsiva;
+	margin-left: 50px;
+}
+
+#options{
+	color:red;
+	font-size:25px;
+	font-weight: bold;
+	float: left;
+	margin-top: 50px;
+	margin-left: 80px;
+
+}
+
+#options ul{
+	list-style-type: none;
+}
+
+#options ul li{
+	margin-top: 50px;
+}
+
+#info{
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	height:400px;
+	width:600px;
+	border: 2px solid purple;
+	background-color: #f7f70c;
+	margin-top: 100px;
+	margin-left: 150px;
+	border-radius: 0px 50px 0px 50px;
+	box-shadow: 10px 10px olive;
+}
+
+#info fieldset{
+	position:absolute;
+	width:85%;
+	left:5%;
+	top:50px;
+
+}
+
+#info ul li{
+	margin-top: 20px;
+	color:#e88402;
+
+}
+
+legend{
+	font-size: 20px;
+	color: #e88402;
+}
+
+.hidden{
+	display: none;
+}
+
+.green-font{
+	color:green;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tabs</title>
+	<link rel="stylesheet" href="tabs.css">
+	<script src="jquery-1.7.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#t1").addClass('mouse-on');
+			$("#t2").addClass('mouse-off');
+			$("#t3").addClass('mouse-off');
+			$("#con2").addClass('hidden');
+			$("#con3").addClass('hidden');
+
+			$("#t1").mouseenter(function(){
+				$("#con1").removeClass('hidden');
+				$("#con2").addClass('hidden');
+				$("#con3").addClass('hidden');
+				$(this).addClass('mouse-on');
+				$("#t2").removeClass('mouse-on').addClass('mouse-off');
+				$("#t3").removeClass('mouse-on').addClass('mouse-off');
+			})
+
+			$("#t2").mouseenter(function(){
+				$("#con2").removeClass('hidden');
+				$("#con1").addClass('hidden');
+				$("#con3").addClass('hidden');
+				$(this).addClass('mouse-on');
+				$("#t1").removeClass('mouse-on').addClass('mouse-off');
+				$("#t3").removeClass('mouse-on').addClass('mouse-off');
+			})
+
+			$("#t3").mouseenter(function(){
+				$("#con3").removeClass('hidden');
+				$("#con1").addClass('hidden');
+				$("#con2").addClass('hidden');
+				$(this).addClass('mouse-on');
+				$("#t1").removeClass('mouse-on').addClass('mouse-off');
+				$("#t2").removeClass('mouse-on').addClass('mouse-off');
+			})
+		});
+	</script>
+</head>
+<body>
+
+	<div id="tabs">
+		<section id="t1" class="mouse-on">Chapter 1</section>
+		<section id="t2">Chapter 2</section>
+		<section id="t3">Chapter 3</section>
+	</div>
+
+	<div id="con1" class="content">
+		<h2>Video Tag</h2>
+		<video id="video1" src="video1.mp4" height="300px" controls></video>
+
+		<fieldset>
+			<legend><b>Details</b></legend>
+			<ul>
+				<li>Specify the path of the video in the "source" tag</li>
+				<li>The controls attribute adds video controls, like play, pause, and volume.</li>
+				<li>If height and width are not set, the browser does not know the size of the video.</li>
+				<li>Autoplay attribute specifies whether the video should start automatically</li>
+			</ul>
+	
+		</fieldset>
+	</div>
+
+	<div id="con2" class="content">
+		<h2>Audio Tag</h2>
+		<audio src="lotus_feet.mp3" controls></audio>
+
+		<fieldset>
+			<legend><b>Details</b></legend>
+			<ul>
+				<li>autoplay: A Boolean attribute; if specified, the audio will automatically begin to play back</li>
+				<li>buffered:An attribute you can read to determine which time ranges of the media have been buffered. </li>
+				<li>controls:If this attribute is present, the browser will offer controls to allow the user to control audio playback, including volume, seeking, and pause/resume playback.</li>
+				<li>loop:A Boolean attribute, when specified, will automatically seek back to the start upon reaching the end of the audio.</li>
+			</ul>
+	
+		</fieldset>
+	</div>
+
+	<div id="con3" class="content">
+		<h2>Other New Tags</h2>
+		
+
+		<fieldset>
+			<legend><b>Details</b></legend>
+			<ul>
+				<li><b>Article:</b>Represents an independent piece of content of a document, such as a blog entry or newspaper article</li>
+				<li><b>Aside:</b>Represents a piece of content that is only slightly related to the rest of the page.</li>
+				<li><b>Canvas:</b>This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.</li>
+				<li><b>Datalist:</b>Together with the a new list attribute for input can be used to make comboboxes</li>
+			</ul>
+	
+		</fieldset>
+	</div>
+	
+</body>
+</html>
